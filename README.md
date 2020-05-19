@@ -36,7 +36,7 @@ HTML
 
 You do not need to install anything to get started with Aspose.3D Cloud SDK for Perl. All you need to do is create an account at [Aspose for Cloud](https://dashboard.aspose.cloud/#/apps) and get your application information.
 
-Please check the [GitHub Repository](https://github.com/aspose-3d-cloud/aspose-3d-cloud-dotnet) for other common usage scenarios.
+Please check the [GitHub Repository](https://github.com/aspose-3d-cloud/aspose-3d-cloud-perl) for other common usage scenarios.
 
 ## Licensing
 
