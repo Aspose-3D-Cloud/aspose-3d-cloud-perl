@@ -15,7 +15,7 @@
 - Address nodes by object addressing path or remove nodes with attached light or camera.
 - Remove 3D objects from a scene.
 
-## Enhancements in Version 20.5
+## Enhancements in Version 20.7
 
 - Support convert more file formats(HTML/VRML...).
 - Triangulate part of the scene(Specified by OAP) and save the scene to different file 
