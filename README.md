@@ -40,6 +40,36 @@ HTML
 
 Register an account at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) to get you application information & start using the source in this repo.
 
+## Convert 3D to PDF in Perl
+
+```perl
+	# Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	
+	my $config = AsposeThreeDCloud::Configuration->new('base_url' => 'https://api.aspose.cloud');
+    my $client = AsposeThreeDCloud::ApiClient->new( $config);
+    my $oauth_api = AsposeThreeDCloud::OAuthApi->new($client);
+
+    my $grant_type = 'client_credentials';
+    my $client_id = 'MY_CLIENT_ID';
+    my $client_secret =  'MY_CLIENT_SECRET';
+    my $result = $oauth_api->o_auth_post(grant_type => $grant_type, client_id => $client_id, client_secret => $client_secret);
+    my $access_token  = $result->access_token;
+
+    my $new_config = AsposeThreeDCloud::Configuration->new('access_token' =>  $access_token, 'base_url' => 'https://api.aspose.cloud/v3.0');
+    $new_client = AsposeThreeDCloud::ApiClient->new( $new_config);
+	my $api = AsposeThreeDCloud::ThreeDCloudApi->new($new_client)
+	
+	my $name = 'Aspose.Upload.3d';
+    my $newformat = 'pdf';
+    my $newfilename = 'saveasformat.pdf';
+    my $folder = '3DTest';
+    my $is_overwrite = 'true';
+    my $storage = undef;
+
+	my $result = $api->post_convert_by_format(name => $name, newformat => $newformat, newfilename => $newfilename, folder => $folder, is_overwrite => $is_overwrite, storage => $storage);
+```
+
+
 ## Aspose.3D Cloud SDKs in Popular Languages
 
 | .NET | Java | PHP | Python | Ruby | Node.js | Swift | Perl | GO |
